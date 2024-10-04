@@ -1,13 +1,27 @@
 let video1 = document.querySelector("video");
+let tiempoActual;
+
 
 const reproducir=()=>{
     video1.play()
+    let duracion=document.querySelector(".showTime");
+    duracion.textContent=video1.currentTime;
+    tiempoActual=setInterval(() => {
+        let duracion=document.querySelector(".showTime");
+        duracion.textContent="00:"+video1.currentTime.toFixed(0);
+    }, 1000)
 }
+    
 
 const pausar=()=>{
-    video1.pause()
+    video1.pause();
+    clearInterval(tiempoActual);
 }
 
+
+const transformarTiempo=(tiempo)=>{
+
+}
 
 
 
