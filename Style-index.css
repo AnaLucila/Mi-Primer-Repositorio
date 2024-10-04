@@ -17,10 +17,15 @@
     --colorDarkTransparent2: #767a81de;
 }
 body{
-    background-image: url(./imagenes/fondo.jpg) ;
+    background-image: url(./imagenes/fondo.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
+
+.fondoNav {
+    background-color: var(--colorLight);
+}
+
 nav {
     z-index: 4;
     position: fixed;
@@ -148,4 +153,28 @@ h2 {
     text-decoration: none;
     width: 80%;
     margin-bottom: 20px;
+}
+
+footer {
+    background: var(--colorDark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px;
+    color: #f5f5f5;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 60px;
+}
+
+.logo {
+    height: 80px;
+}
+
+.titulo-foot {
+    font-size: 14px;
 }

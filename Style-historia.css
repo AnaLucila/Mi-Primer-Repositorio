@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --colorLight: #FFFFFF;
+    --colorDark: #2F3645;
+    --colorDarkTransparent: #2f3645b3;
+    --colorDarkTransparent2: #767a81de;
+}
+body{
+    background-image: url(./imagenes/historia-programacion.jpg) ;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+header{
+    background-color: #2f36458c;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondoNav {
+    background-color: white;
+}
+
+nav {
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    transition: background-color 1s;
+}
+
+
+.computadora {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.menu {
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+
+.item-menu {
+    list-style-type: none;
+
+}
+
+.item-link {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-shadow: 1px 1px gray, 2px 3px black;
+}
+h1 {
+    font-weight: 400;
+    font-size: calc(3em + 18px);
+    color: #eeeeee;
+    text-shadow: 2px 2px #808080, 6px 6px black;
+}
+.titulo-blanco {
+    text-align: center;
+}
+
+main {
+    padding: 100px 20px;
+    background-color: white;
+}
+.card-hist {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 50px;
+    gap: 20px;
+}
+
+.card-hist>img {
+    width: 50%;
+}
+
+.card-text-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+h2 {
+    text-shadow: 1px 1px white, 2px 2px gray;
+    font-size: calc(2em + 18px);
+    font-weight: 500;
+    text-align: center;
+    color: var(--colorDark);
+}
+.text-hist {
+    color: var(--colorDark);
+}
+.contenedorVideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    gap: 80px;
+}
+article{
+    padding: 100px 20px;
+    background-color: white;
+}
+.container {
+    padding: 5px;
+    background-color: var(--colorDark);
+    width: 70%;
+}
+
+video{
+    width: 100%;
+}
+.barra {
+    background-color: var(--colorDark);
+    border-radius: 10px;
+    padding: 20px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.botonera {
+    display: flex;
+    gap: 20px;
+}
+
+.botonesVideo {
+    box-shadow: 2px 2px grey;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: var(--colorLight);
+    color: var(--colorDark);
+    font-weight: 300;
+    border: 1px solid var(--colorDark);
+}
+
+.play {
+    width: 80px;
+}
+
+.pause  {
+    width: 80px;
+}
+
+.showTime {
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+footer {
+    background: var(--colorDark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px;
+    color: #f5f5f5;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 60px;
+}
+
+.logo {
+    height: 80px;
+}
+
+.titulo-foot {
+    font-size: 14px;
+}
