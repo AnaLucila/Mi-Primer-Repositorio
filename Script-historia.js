@@ -1,4 +1,4 @@
-let video1 = querySelector("video");
+let video1 = document.querySelector("video");
 
 const reproducir=()=>{
     video1.play()
@@ -8,8 +8,7 @@ const pausar=()=>{
     video1.pause()
 }
 
-reproducir()
-pausar()
+
 
 
 
