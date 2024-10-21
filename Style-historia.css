@@ -23,7 +23,7 @@ body{
 
 header{
     background-color: #2f36458c;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,6 +88,14 @@ li {
     color: #FFFFFF;
     text-shadow: 1px 1px gray, 2px 3px black;
 }
+
+.item-menu:hover{
+    transform: translate(3px,2px);
+}
+.item-link:hover{
+    text-shadow: none;
+}
+
 h1 {
     font-weight: 400;
     font-size: calc(3em + 18px);
@@ -184,6 +192,10 @@ video{
     width: 80px;
 }
 
+.botonesVideo:hover{
+    transform: translate(2px,2px);
+    text-shadow: none;
+}
 .showTime {
     padding-right: 10px;
     font-family: Arial, Helvetica, sans-serif;

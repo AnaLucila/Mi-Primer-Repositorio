@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -17,13 +16,22 @@
     --colorDarkTransparent2: #767a81de;
 }
 body{
-    background-image: url(./imagenes/fondo.jpg);
+    background-image: url(./imagenes/img2.jpg) ;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; 
+}
+
+header{
+    background-color: #2f36458c;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .fondoNav {
-    background-color: var(--colorLight);
+    background-color: white;
 }
 
 nav {
@@ -37,6 +45,7 @@ nav {
     padding: 40px;
     transition: background-color 1s;
 }
+
 
 .computadora {
     color: -webkit-link;
@@ -72,14 +81,6 @@ li {
 
 }
 
-.item-menu:hover{
-    transform: translate(3px,2px);
-  
-}
-.item-link:hover{
-    text-shadow: none;
-}
-
 .item-link {
     text-decoration: none;
     font-size: 1.5em;
@@ -88,14 +89,11 @@ li {
     text-shadow: 1px 1px gray, 2px 3px black;
 }
 
-header {
-    background: url(./assets/imagenes/fondo.jpg) 50% 0 fixed;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.item-menu:hover{
+    transform: translate(3px,2px);
+}
+.item-link:hover{
+    text-shadow: none;
 }
 
 h1 {
@@ -112,7 +110,9 @@ main {
     padding: 100px 20px;
     background-color: white;
 }
-
+.espacio-titulo {
+    padding: 80px 10px;
+}
 h2 {
     text-shadow: 1px 1px white, 2px 2px gray;
     font-size: calc(2em + 18px);
@@ -120,50 +120,50 @@ h2 {
     text-align: center;
     color: var(--colorDark);
 }
-
-.cont-padre {
-    margin: 100px 0px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
-}
-
-.card {
-    width: 450px;
-    height: 500px;
-    gap: 40px;
-    background-color: var(--colorLight);
+.juego {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+}
+.cajas {
+    display: flex;
+    flex-direction: row;
+    
+}
+.caja {
+    width: 275px;
+    height: 400px;
+    display: flex;
+    border: 2px solid black;
+    background-color: grey;
+    text-align: center;
+    justify-content: center;
     align-items: center;
 }
 
-.img-card {
-    width: 100%;
-    margin: 0px;
+#cajaimagenes {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 40px;
 }
-
-.desc-card {
-    width: 90%;
-    text-align: center;
-    height: 30px;
-    color: #181D31;
+#imagen1, #imagen2, #imagen3 {
+    width: 275px;
+    height: 400px;
 }
-
-.boton-ver {
-    padding: 10px;
-    color: #F0F5E4;
+.reinicio {
+    display: flex;
+    margin: auto;
+    padding: 10px 100px;
+    border: none;
+    border-radius: 0px;
     background-color: var(--colorDark);
-    text-align: center;
+    color: var(--colorLight);
     text-transform: uppercase;
-    text-decoration: none;
-    width: 80%;
-    margin-bottom: 20px;
+    font-weight: 300;
 }
-
 footer {
+    margin-top: 70px;
     background: var(--colorDark);
     display: flex;
     justify-content: space-between;

@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./imagenes/logo.png">
-    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="./Style_juguemos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Proyecto Final</title>
 </head>
-<body>
+<body onscroll="navChange()">
     <nav>
         <a class="computadora" href="./Index.html">INICIO</a>
         <ul class="menu">
@@ -25,6 +25,35 @@
     <header>
         <h1 class="titulo-blanco">JUGUEMOS UN POCO</h1>
     </header>
-    
+    <main>
+        <h2 class="espacio-titulo">Armemos el rompecabezas y veamos qué imagen es...</h2>
+        <section class="juego">
+            <div class="cajas">
+                <div class="caja" id="cajasoltar">
+                    <p>Arrastre y suelte la imagen aquí</p>
+                </div>
+                <div class="caja" id="cajasoltar2">
+                    <p>Arrastre y suelte la imagen aquí</p>
+                </div>
+                <div class="caja" id="cajasoltar3">
+                    <p>Arrastre y suelte la imagen aquí</p>
+                </div>
+            </div>
+            <div id="cajaimagenes">
+                <img id="imagen1" src="./imagenes/rompe2.png" alt="imagen-rompecabezas">
+                <img id="imagen2" src="./imagenes/Rompe1.png" alt="imagen-rompecabezas">
+                <img id="imagen3" src="./imagenes/Rompe3.png" alt="imagen-rompecabezas">
+            </div>
+        </section>
+        <button onclick="reinicio()" class="botonesVideo reinicio">Reiniciar</button>
+        <footer>
+            <div class="footer-left">
+                <img class="logo" src="./imagenes/logo.png" alt="logo">
+                <h3 class="titulo-blanco titulo-foot">PROGRAMACION <br> E <br> HISTORIA</h3>
+            </div>
+            <div>Sitio con fines educativos - Creado por M.Victoria Lopez</div>
+        </footer>  
+    </main>
+    <script src="./Script-historia.js"></script>
 </body>
 </html>
