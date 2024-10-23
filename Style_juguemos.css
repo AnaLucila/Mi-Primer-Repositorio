@@ -141,6 +141,14 @@ h2 {
     align-items: center;
 }
 
+.caja:hover{
+    background-color: #1d1d1d;
+    
+}
+.caja:hover>p{
+    color: var(--colorLight);
+}
+
 #cajaimagenes {
     display: flex;
     flex-direction: row;

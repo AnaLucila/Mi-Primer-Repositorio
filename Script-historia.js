@@ -24,41 +24,67 @@ const transformarTiempo=(tiempo)=>{
 }
 
 
+let menu= document.querySelector('.menu');
+let flag=false;
+let contador=0;
+
+const navChange=()=>{
+    if(window.innerHeight*0.35 < window.scrollY  ){
+        document.querySelector("nav").classList.add("fondoNav")
+        
+    }else{
+    document.querySelector("nav").classList.remove("fondoNav")
+    }
+} 
+function iniciar(){
+    var imagenes=document.querySelectorAll('#cajaimagenes img');
+    soltar=document.getElementById('cajasoltar');  
+    soltar2  =document.getElementById('cajasoltar2'); 
+    soltar3 = document.getElementById('cajasoltar3'); 
+
+    for(var i=0; i<imagenes.length; i++){
+    imagenes[i].addEventListener('dragstart', arrastrado, false);
+    }
+
+    soltar.addEventListener('dragenter', function(e){
+    e.preventDefault(); }, false);
+    soltar.addEventListener('dragover', function(e){
+    e.preventDefault(); }, false);
+    soltar.addEventListener('drop', soltado, false);
 
 
+    soltar2.addEventListener('dragenter', function(e){
+    e.preventDefault(); }, false);
+    soltar2.addEventListener('dragover', function(e){
+    e.preventDefault(); }, false);
+    soltar2.addEventListener('drop', soltado, false);
 
-/*TRATANDO DE CAMBIAR EL COLOR DEL NAV AL HACER SCROLL
 
-function navChange(params) {
-    
-    
-    window.addEventListener("scroll",()=>{
-        let navegador = document.querySelector("nav");
-        navegador.classList.add(".fondoNav");
-        }
-    )
- 
+    soltar3.addEventListener('dragenter', function(e){
+    e.preventDefault(); }, false);
+    soltar3.addEventListener('dragover', function(e){
+    e.preventDefault(); }, false);
+    soltar3.addEventListener('drop', soltado, false);
 }
-navChange()
 
-
-function navChange(){
-
-    let navegador=document.querySelector(".noche");
-    let contenedor=document.querySelector(".tema");
-    
-
-    titulo3.addEventListener('mouseover',()=>{
-        let img = document.createElement('img');
-        img.setAttribute("src","./murcielago.png");
-        contenedor.appendChild(img);
-
-        if (contenedor.style.backgroundColor != "darkblue") {
-            contenedor.style.backgroundColor = "darkblue"
-            contenedor.style.color = "black"
-            
-        } 
-
-})
+function arrastrado(e){
+    elemento=e.target;
+    e.dataTransfer.setData('Text', elemento.getAttribute('id'));
 }
-diaNoche();*/
+
+async function soltado(e){
+    e.preventDefault();
+    console.log(e)
+    let id=e.dataTransfer.getData('Text');
+    let imagen=document.getElementById(id);
+    imagen.style.display= 'none';
+    e.target.innerHTML='<img src="'+imagen.src+'" height="400px" width="275px">';
+    contador++
+}
+
+
+function reinicio() {
+    window.location.reload();
+}
+iniciar()
+
